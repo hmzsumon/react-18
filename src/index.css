@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-transition {
+	@apply transition duration-300 ease-in-out;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+.mobile-menu {
+	transform: translateX(-100%);
+}
+
+.active-mobile-menu {
+	transform: translateX(0);
+}
+
+.mobile-menubar:hover {
+	transform: rotate(180deg);
+}
+.mobile-menubar-active {
+	transform: rotate(180deg);
+}
+
+/* grid Container */
+
+.grid_container {
+	display: grid;
+	grid-template-rows: 4rem auto 8rem;
+}
